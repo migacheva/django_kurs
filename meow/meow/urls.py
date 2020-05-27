@@ -21,6 +21,7 @@ import mainapp.views as mainapp
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', mainapp.main),
-    path('meow/', mainapp.meow),
+    path('univer/', mainapp.univer),
+    path('job/', mainapp.job),
 
 ]
