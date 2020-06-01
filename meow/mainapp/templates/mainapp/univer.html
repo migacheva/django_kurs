@@ -1,10 +1,96 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/univer.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/menu.css' %}">
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>ИНФО ОБ УНИВЕРЕ</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 <body>
-УНИВЕР
+  <div class="parallax">
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">☰</span>
+  </div>
+
+  <script>
+  function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+  }
+  </script>
+<!--Боковое меню-->
+    <div>
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+          <a href="/">Главная</a>
+          <a href="/univer/">Обучение</a>
+          <a href="/job/">Работа</a>
+        </div>
+
+
+
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+    </div>
+<div class="timeline">
+  <div class="container left">
+    <div class="content">
+      <h2>2019</h2>
+      <p>Получение степени магистра по специальности "Информационные системы и технологии" института информационных технологий и
+          радиоэлектроники Владимирского Государственного Университета  им. Александра Григорьевича и
+          Николая Григорьевича Столетовых</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>2017</h2>
+      <p>Получение степени бакалавра по специальности "Программная инженерия" института информационных технологий и
+          радиоэлектроники Владимирского Государственного Университета  им. Александра Григорьевича и
+          Николая Григорьевича Столетовых</p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>2015</h2>
+      <p>Привлечение к деятельности профсоюзной организации, исполнение обязанностей секретаря собрания</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>2013</h2>
+      <p>Выпуск из учебного учреждения среднего звена</p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>2010</h2>
+      <p>Волонтерская деятельность на уровне города и помощь в организации городских мероприятий</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>2009</h2>
+      <p>Школа ораторского искусства</p>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>
