@@ -12,6 +12,13 @@
     background-size: cover;
 }
 
+.lala {
+    vertical-align: middle;
+    width: 400px;
+    height: 350px;
+}
+
+
 /* Style the tab */
 .tab {
     overflow: hidden;
@@ -68,6 +75,7 @@ body {
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
+    text-align: center;
 }
 
 /* The actual timeline (the vertical ruler) */
