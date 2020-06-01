@@ -1,10 +1,89 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/job.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/menu.css' %}">
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>ИНФО О РАБОТЕ</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 <body>
-РАБОТА
+  <div class="parallax">
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">☰</span>
+  </div>
+
+  <script>
+  function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+  }
+  </script>
+<!--Боковое меню-->
+    <div>
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+          <a href="/">Главная</a>
+          <a href="/univer/">Обучение</a>
+          <a href="/job/">Работа</a>
+        </div>
+
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+    </div>
+<div class="timeline">
+  <div class="container left">
+    <div class="content">
+      <h2>2019</h2>
+      <p>CASHFLOW</p>
+      <img src="../../../static/img/sber.png" alt="Avatar" class="lala">
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>2018</h2>
+      <p>СОДФУ</p>
+      <img src="../../../static/img/СОДФУ.jfif" alt="Avatar" class="lala">
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>2017</h2>
+      <p>АТОН</p>
+      <img src="../../../static/img/атон.png" alt="Avatar" class="lala2">
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>2017</h2>
+      <p>BCS GM</p>
+      <img src="../../../static/img/БКС.jpg" alt="Avatar" class="lala2">
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>2016</h2>
+      <p>HOME CREDIT</p>
+      <img src="../../../static/img/хомяк.jpg" alt="Avatar" class="lala">
+    </div>
+  </div>
+</div>
+
 </body>
 </html>
