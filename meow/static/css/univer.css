@@ -14,10 +14,14 @@
 
 .lala {
     vertical-align: middle;
-    width: 400px;
-    height: 350px;
+    width: 450px;
+    height: 300px;
 }
 
+.lala2 {
+    vertical-align: middle;
+    max-width: 400px;
+}
 
 /* Style the tab */
 .tab {
