@@ -7,6 +7,13 @@ body, html {
   color: #777;
 }
 
+.avatar {
+    vertical-align: middle;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
 .bgimg-1, .bgimg-2, .bgimg-3 {
   position: relative;
   opacity: 0.65;
